@@ -5,6 +5,7 @@
     font-family: sans-serif, Verdana, Geneva, Tahoma;
 }
 form{
+    position: relative;
     width: 300px;
     padding: 20px;
     border-radius: 20px;
@@ -12,6 +13,7 @@ form{
     background: linear-gradient(#bd09b7,#6b4cf5);
     box-shadow: 4px 4px 8px #555;
     color: #ffffff;
+    padding-bottom: 50px;
 }
 label{
     display: block;
@@ -22,6 +24,12 @@ label{
     padding: 7px;
 }
 button{
+    position: absolute;
     padding: 5px 15px;
-    margin-left: 178px;
+    right: 20px;
+}
+@media (max-width: 500px) {
+    form{
+        width: 100%;
+    }
 }
