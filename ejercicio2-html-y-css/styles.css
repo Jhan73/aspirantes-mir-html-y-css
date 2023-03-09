@@ -4,6 +4,11 @@
     box-sizing: border-box;
     font-family: sans-serif, Verdana, Geneva, Tahoma;
 }
+body{
+    background-image: url("../img/ken-cheung.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 form{
     position: relative;
     width: 300px;
@@ -11,7 +16,7 @@ form{
     border-radius: 20px;
     margin: 20px auto;
     background: linear-gradient(#bd09b7,#6b4cf5);
-    box-shadow: 4px 4px 8px #555;
+    box-shadow: 4px 4px 8px #6b4cf5;
     color: #ffffff;
     padding-bottom: 50px;
 }
@@ -22,14 +27,28 @@ label{
 .input{
     width: 100%;
     padding: 7px;
+    margin-top: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: #6b4cf5;
 }
 button{
     position: absolute;
     padding: 5px 15px;
     right: 20px;
+    border-radius: 5px;
+    border: 2px solid #bd09b7;
+    background: linear-gradient(45deg,#bd09b7,#6b4cf5);
+    color: #ffffff;
+    box-shadow: 1px 1px 5px 1px #bd09b7;
 }
 @media (max-width: 500px) {
     form{
         width: 100%;
     }
+}
+button:hover{
+    background: linear-gradient(225deg,#bd09b7,#6b4cf5);
+    box-shadow: none;
 }
